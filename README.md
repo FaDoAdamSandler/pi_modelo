@@ -8,101 +8,58 @@ Professores: [Marco André Mendes](github.com/marcoandre) e [Alann Perini](https
 
 Links do projeto:
 
--   [Documentação (esse documento)](github.com/marcoandre/pi-modelo)
--   [Backend](github.com/marcoandre/pi-backend)
--   [Frontend](github.com/marcoandre/pi-frontend)
+-   [Documentação](github.com/FaDoAdamSandler/pi-modelo)
+-   [Backend]()
+-   [Frontend-Mockup](https://www.figma.com/file/XHktzx8KwSCYFRFMbHjZec/F%C3%A1brica-Build?node-id=0%3A1&t=sLv59h9FqwW3CUKk-1)
 
-# Como usar esse modelo para o Projeto Integrador
+<!-- # Como usar esse modelo para o Projeto Integrador
 
 1. Faça um fork desse repositório para a sua conta do GitHub.
 2. Clone o repositório para o seu computador.
 3. Abra o arquivo README.md no seu editor de texto favorito (recomendamos o [Visual Studio Code](https://code.visualstudio.com/)).
 4. Tenha instalada a extensão [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) no seu editor de texto.
-5. Edite o arquivo README.md com as informações do seu projeto.
+5. Edite o arquivo README.md com as informações do seu projeto. -->
 
-# Desenvolvimento
+<!-- # Desenvolvimento
 
 -   As equipes serão avaliadas por cada etapa da documentação e entregas realizadas.
--   Cada equipe deverá escolher um sistema para o desenvolvimento das atividades, a partir dos modelos apresentados.
+-   Cada equipe deverá escolher um sistema para o desenvolvimento das atividades, a partir dos modelos apresentados. -->
 
-# Modelos de Sistemas
+# Modelos de Sistema
 
-**Nessa parte a equipe deve escolher um dos modelos de sistemas para desenvolver o projeto. Ao escolher, escreva uma breve descrição do sistema e o motivo da escolha e pode apagar os outros modelos.**
+<!-- **Nessa parte a equipe deve escolher um dos modelos de sistemas para desenvolver o projeto. Ao escolher, escreva uma breve descrição do sistema e o motivo da escolha e pode apagar os outros modelos.** -->
 
-## 1- Ponto de Vendas (PDV)
+## 3 - Ordem de Serviço (O.S.)
 
-**Gerenciamento de vendas para uma padaria**
+**Gerenciamento da Fábrica de Software**
 
-O nosso cliente, Sr. Genival, tem uma padaria de bairro chamada padaria Pão Genial e, devido a qualidade de seus produtos, ela está crescendo rapidamente. Recentemente, ele contratou mais funcionários para atendimento, caixa, panificação, etc.
-Assim, atualmente, ele consegue concentrar seus esforços para melhorar a gestão da padaria. Para isso, ele quer instalar um sistema de controle de vendas que permita ao caixa lançar as vendas realizadas. Como sua intenção
-é melhorar a gestão do negócio, é muito importante que ele consiga ter
-relatórios, como por exemplo, de vendas.
+Um sistema para o gerenciamento de projetos desenvolvidos dentro da F.S (Fábrica de Software). Com meios de comunicação entre o coordenador do projeto e os alunos alocados. Ordem de serviço foi o modelo mais compatível com o tipo de sistema que queremos desenvolver, um sistema para o gerenciamento de um ambiente de trabalho.
 
-## 2- Empréstimo
 
-**Gerenciamento de uma biblioteca**
+![Ciclo da Venda](docs/CicloDeVendas.svg "Ciclo da Venda")
 
-Uma ONG, chamada Sala Arco Íris, ajuda crianças de baixa renda em sua educação básica. Atualmente, recebeu uma doação de mais de 1000 livros e está montando a sua biblioteca. Eles querem emprestar os livros para as crianças e os pais das crianças. Apesar de
-terem um computador e as estantes necessárias à disposição nessa nova biblioteca, não possuem verba suficiente para um leitor de impressão digital ou para produção
-de carteirinhas para todas as crianças. Para isso, eles precisam de um sistema que gerencie todo o acervo, empréstimos, livros disponíveis, etc. mas que isso ocorra de maneira simples e sem necessidade de novos gastos. Também é importante que haja relatórios, permitindo o controle dos empréstimos e dos livros disponíveis no acervo.
+-   **Introdução**: A fábrica de software é responsável por desenvolver projetos em que alunos e professores trabalham juntos para resolver problemas reais. Coordenada atualmente por Ivo Riegel, a fábrica conta com 5 alunos e 4 professores que coordenam projetos, e existe a previsão para mais “contratações”.
+ 
+-   **Situação-problema**: O cliente entra em contato para a fábrica para apresentar um problema ou um projeto que precisa ser desenvolvido. Cada professor mantém em uma planilha os projetos que gerencia e define os alunos que estão aptos a desenvolver os projetos.
+O professor responsável pelo projeto, necessita também fazer o gerenciamento, organização das tarefas, acompanhamento dos alunos, tudo sem uma plataforma   específica (em planilhas e anotações), gerando um transtorno por conta do déficit na eficiência na comunicação da coordenação com os alunos.
 
-## 3- Ordem de Serviço (O.S.)
-
-**Manutenção de computadores**
-
-Sr. Sálvio, nosso cliente, fez um curso de manutenção de celulares e smartphones e decidiu abrir um negócio, onde ele é responsável pelos consertos e sua esposa Marília realiza os atendimentos aos clientes. Com sua visão empreendedora, ele sentiu a necessidade de um software que auxilie
-sua esposa nas tarefas diárias. Para isso, ele deseja um sistema que gerencie os clientes, orçamentos, serviços e retirada dos equipamentos. Sendo um negócio pequeno, é muito importante que ele consiga ter relatórios que lhe ajudem na gestão da
-empresa, como dos status dos serviços.
-
-# Situação Problema
-
-**Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.**
-
-![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
-
-Descrevem o que acontece atualmente na empresa em um contexto global,
-abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
-
-Sabendo disso, seu papel é **detalhar o funcionamento da empresa escolhida na
-atualidade, ou seja, antes de seu novo software**, usando como base a situação que passamos, mas aprofundando os detalhes de como as coisas acontecem.
-
--   Pesquise sobre empresas do ramo escolhido
-    para entender como funcionam;
--   Aproveite seus conhecimentos previamente adquiridos na área da empresa que escolheu, se houver;
--   Simule uma situação real. Lembre-se que são
-    propostas com empresas fictícias, sendo assim,
-    você terá que tomar certas decisões sobre como
-    a empresa funciona em relação às coisas que
-    não estão definidas no documento base (por
-    exemplo, no caso da padaria, dizemos que seu
-    Genival contratou mais funcionários, mas saber
-    quantos e o que fazem pode ser relevante para o software), então tente “visualizar” a
-    empresa funcionando, como se você estivesse lá acompanhando o dia-a-dia;
-
-Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
-
--   **Introdução**: comece com um parágrafo apresentando a empresa (nome, o que faz, tempo de existência, o dono, funcionários,
-    etc);
--   **Situação-problema**: Aborde em detalhes como a empresa funciona, procurando seguir uma
-    ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa
-    diferente que for explicar (como faria em uma redação);
--   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia
-    ajudar a resolvê-los.
+-   **Conclusão**: Com base nos problemas analisados, o software iria auxiliar com a falta de organização do gerenciamento dos projetos, manter os registros de forma organizada, controle dos alunos bolsistas e facilitar o contato e o desenvolvimento entre equipes.
 
 # Descrição da proposta
 
-Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do
-desejado e permita sua continuidade.
+Baseado em todas as informações adquiridas com o cliente e a identificação dos problemas apresentados, buscamos apresentar uma proposta de desenvolvimento do software para sanar as dificultades de gerenciamento da fábrica.
+
+Para o controle e gerenciamento dos projetos cadastrados no sistema, visando padronizar e melhorar a comunicação entre as equipes e o coordenador, além disso facilitar o cadastro dos novos alunos da fábrica, integrando-o com o gerenciamento dos projetos, assim obtendo maior eficiência e poupando tempo do coordenador
 
 **Alguns pontos importantes a se destacar são:**
 
--   **Qual o foco de ação do software** relacionado com os problemas levantados na análise da situação-problema. O que realmente o software vai fazer. Por exemplo, o foco de ação do Gmail é permitir o envio e recebimento de e-mails.
--   **Os níveis de usuário do sistema**. Somente o gestor tem acesso? E os funcionários? Talvez seja para ambos, ou para funcionários de cargos
-    diferentes, etc.
--   **O que poderá ser feito no software**.Apenas o principal, sem pensar em
-    telas ou detalhes específicos, pois isso será feito em outro momento.
-    -   **Se houver mais de um nível de usuário**, ressaltar as diferenças entre
-        eles na descrição da proposta.
+-   **Qual o foco de ação do software?** Permitir que os coordenadores possam ter uma interface padronizada para gerenciar seus atuais projetos relacionados a F.S, também podendo se comunicar com os alunos envolvidos, sobre o projeto, via um mural. 
 
-Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
-precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
+-   **Os níveis de usuário do sistema**. Na fábrica, todos os funcionários possuem acesso ao sistema, exceto o PO (Product Owner). O sistema possui uma hierarquia de permissões que é composta por três níveis:
+
+    -   **O primeiro nível é o administrador do sistema**, que possui permissões para remover, travar e alterar qualquer projeto no sistema, pode remover alunos inativos, adicionar novos alunos, definir reuniões gerais da fábrica, notificar atrasos de entregas e aplicar punições aos alunos inadimplentes.
+
+    -   **O segundo nível é o gerente de projetos**, que tem a permissão de criar (no máximo 2), travar, remover e alterar projetos. Além disso, ele pode assimilar alunos aos seus projetos, marcar reuniões com suas equipes, notificar alunos de seu próprio grupo e remover alunos das equipes.
+
+    -   **O terceiro nível é o usuário comum**, também conhecido como bolsista. Esse usuário possui permissões para editar os projetos em que está inscrito, enviar notas pelo "fábrica notes" e concluir tarefas.
+
