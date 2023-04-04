@@ -25,7 +25,7 @@ Links do projeto:
 -   As equipes serão avaliadas por cada etapa da documentação e entregas realizadas.
 -   Cada equipe deverá escolher um sistema para o desenvolvimento das atividades, a partir dos modelos apresentados. -->
 
-# Modelos de Sistema
+# Modelo de Sistema
 
 <!-- **Nessa parte a equipe deve escolher um dos modelos de sistemas para desenvolver o projeto. Ao escolher, escreva uma breve descrição do sistema e o motivo da escolha e pode apagar os outros modelos.** -->
 
