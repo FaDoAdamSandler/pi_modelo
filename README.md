@@ -66,3 +66,57 @@ Para o controle e gerenciamento dos projetos cadastrados no sistema, visando pad
 
     -   **O terceiro nível é o usuário comum**, também conhecido como bolsista. Esse usuário possui permissões para editar os projetos em que está inscrito, enviar notas pelo "fábrica notes" e concluir tarefas.
 
+# Regras de Negócio
+
+* RN001 - Máximo de projetos: Um usuário de nível gerente de projetos deve ser capaz apenas de coordenar **2 Projetos** por vez. 
+
+* RN002 - Máximo de bolsistas por projeto: Cada projeto pode contar com apenas **5 bolsistas** no máximo.
+
+* RN003 - Publicação de Projetos: Apenas usuários de nível gerente de projeto ou maior podem fazer a publicação dos projetos nos domínios **fabricadesoftware.ifc.edu.br**
+
+* RN004 - Criação de projetos: Os usuários com nível gerente ou maior podem criar projetos desde que não excedam a quantidade estipulada pela RN001
+
+* RN005 - Máximo de projetos por Bolsista: Cada bolsista tem direito a participar de até 2 projetos simultaneamente.
+
+* RN006 - Expulsão de Bolsistas: Apenas usuários com nível administrador podem expulsar/banir/privar bolsistas que saiam das regras.
+
+* RN007 - Recrutamento de Bolsistas: Apenas usuários com nível administrador podem recrutar e inserir novos bolsistas no sistema.
+
+* RN008 - Duração dos projetos: todos os projetos têm duração máxima de **1 ano (Um Ano)**, prorrogáveis em até **2 Anos (Dois Anos)**.
+
+* RN009 - Exclusão de projetos: apenas o responsável pelo projeto pode excluir os projetos de sua responsabilidade.
+
+* RN010 - Avisos no mural: só um gerente de projetos ou maior pode postar um aviso no mural.
+   
+# Requisitos Funcionais
+
+* RF001 - Cadastro de projetos - O sistema deve permitir o cadastro de projetos para o gerenciamento da fábrica, incluindo informações como nome do projeto, descrição, equipe responsável e prazo de entrega.
+
+* RF002 - Gerenciamento de projetos - O sistema deve permitir que os gerentes de projetos criem, editem, travem e removam projetos. Os gerentes de projeto também devem ser capazes de adicionar e remover membros da equipe e atribuir tarefas aos membros da equipe.
+
+* RF003 - Hierarquia de permissões - O sistema deve permitir que o administrador defina a hierarquia de permissões com três níveis: administrador do sistema, gerente de projetos e usuário comum. Cada nível de permissão deve ter acesso a diferentes recursos e funcionalidades do sistema.
+
+* RF004 - Gerenciamento de alunos - O sistema deve permitir que o administrador adicione novos alunos à fábrica e remova alunos inativos. O sistema deve permitir que o gerente de projeto assimile alunos aos seus projetos e remova alunos das equipes.
+
+* RF005 - Comunicação - O sistema deve permitir a comunicação entre membros da equipe de um projeto, bem como entre os gerentes de projeto e os membros da equipe. Isso pode ser feito por meio de uma ferramenta de chat ou de e-mail integrado.
+
+* RF006 - Fábrica Notes - O sistema deve permitir que os usuários enviem notas pelo "fábrica notes". Essas notas podem ser usadas para informar sobre o progresso do projeto, marcar reuniões ou informar sobre atrasos.
+
+* RF007 - Controle de tarefas - O sistema deve permitir que os membros da equipe visualizem as tarefas atribuídas a eles e as concluam quando estiverem prontos. O sistema também deve permitir que os gerentes de projeto monitorem o progresso das tarefas e atribuam novas tarefas, se necessário.
+
+* RF008 - Relatórios - O sistema deve permitir que os gerentes de projeto gerem relatórios sobre o progresso do projeto, o desempenho da equipe e o tempo gasto em cada tarefa. Esses relatórios podem ser usados para avaliar o desempenho da equipe e fazer melhorias no processo de gerenciamento do projeto.
+
+# Requisitos Não Funcionais
+
+* RNF001 - Segurança - o sistema deve ser protegido contra acesso não autorizado 
+* RNF002 - Manuseabilidade - o sistema deve ser capaz de aumentar ou diminuir conforme necessário 
+* RNF003 - Manuseablilidade - o sistema deve ser fácil de manter e atualizar 
+* RNF004 - Segurança - o sistema deve ser confiável e atender aos requisitos do usuário 
+* RNF005 - Compatibilidade - o sistema deve ser compatível com outros sistemas(como o Github)
+* RNF006 - Compatibilidade - o sistema deve ser compatível com Linux e Windows 
+* RNF007 - Atuação - o sistema deve ser capaz de lidar com múltiplos usuários simultâneos
+* RNF008 - Manutenção - o sistema deve receber manutenções recorrentes
+* RNF009 - Disponibilidade - o sistema deve ficar disponível 24 horas
+* RNF010 - Banco de Dados - o sistema deve ter o banco de dados em django
+
+
