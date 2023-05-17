@@ -89,22 +89,60 @@ Para o controle e gerenciamento dos projetos cadastrados no sistema, visando pad
 * RN010 - Avisos no mural: só um gerente de projetos ou maior pode postar um aviso no mural.
    
 # Requisitos Funcionais
+**Entrada**
+* **RF001 - Cadastro de projetos:** O sistema deve permitir o cadastro de projetos para o gerenciamento da Fábrica. 
+**Dados necessários:** nome do projeto, descrição, equipe responsável e prazo de entrega. 
+**Nível de usuário:** gerente do projeto.
 
-* RF001 - Cadastro de projetos - O sistema deve permitir o cadastro de projetos para o gerenciamento da fábrica, incluindo informações como nome do projeto, descrição, equipe responsável e prazo de entrega.
 
-* RF002 - Gerenciamento de projetos - O sistema deve permitir que os gerentes de projetos criem, editem, travem e removam projetos. Os gerentes de projeto também devem ser capazes de adicionar e remover membros da equipe e atribuir tarefas aos membros da equipe.
+* **RF002 - Cadastro de alunos:** - O sistema deve permitir que o administrador adicione novos alunos à fábrica e remova alunos inativos. 
+**Dados necessários:** nome do aluno, email do aluno e senha.
+**Nível de usuário:** administrador.
 
-* RF003 - Hierarquia de permissões - O sistema deve permitir que o administrador defina a hierarquia de permissões com três níveis: administrador do sistema, gerente de projetos e usuário comum. Cada nível de permissão deve ter acesso a diferentes recursos e funcionalidades do sistema.
+* **RF003 - Login:** - O sistema deve permitir que os usuários cadastrados realizem login. 
+**Dados necessários:** Email e Senha
+**Nível de usuário:** administrador.
 
-* RF004 - Gerenciamento de alunos - O sistema deve permitir que o administrador adicione novos alunos à fábrica e remova alunos inativos. O sistema deve permitir que o gerente de projeto assimile alunos aos seus projetos e remova alunos das equipes.
 
-* RF005 - Comunicação - O sistema deve permitir a comunicação entre membros da equipe de um projeto, bem como entre os gerentes de projeto e os membros da equipe. Isso pode ser feito por meio de uma ferramenta de chat ou de e-mail integrado.
+* RF004 - Mural - O sistema deve permitir manter postagens criadas por gerentes dos projetos, que podem ser visualizadas pelos usuários comuns via um mural do projeto.
+**Dados necessários:** Título, tipo do post(prazo, comunicado ou pergunta) e o descrição do post.
+**Nível de usuário:** gerente do projeto.
 
-* RF006 - Fábrica Notes - O sistema deve permitir que os usuários enviem notas pelo "fábrica notes". Essas notas podem ser usadas para informar sobre o progresso do projeto, marcar reuniões ou informar sobre atrasos.
+* RF005 - Comunicação - O sistema deve permitir manter comentários nos posts criados pelos gerentes dos projetos.
+**Dados necessários:** descrição do comentário.
+**Nível de usuário:** usuário comum, gerente do projeto.
 
-* RF007 - Controle de tarefas - O sistema deve permitir que os membros da equipe visualizem as tarefas atribuídas a eles e as concluam quando estiverem prontos. O sistema também deve permitir que os gerentes de projeto monitorem o progresso das tarefas e atribuam novas tarefas, se necessário.
+**Processo**
 
-* RF008 - Relatórios - O sistema deve permitir que os gerentes de projeto gerem relatórios sobre o progresso do projeto, o desempenho da equipe e o tempo gasto em cada tarefa. Esses relatórios podem ser usados para avaliar o desempenho da equipe e fazer melhorias no processo de gerenciamento do projeto.
+* RF006 - Controle de tarefas - O sistema deve permitir que os gerentes de projeto monitorem o progresso individual de cada aluno, via uma lista de tarefas individual para cada aluno.
+**Dados necessários:** descrição da tarefa, lista dos alunos, cargo dos alunos no projeto.
+**Nível de usuário:** gerente do projeto.
+
+* RF007 - Apontamento de tarefas - O sistema deve permitir que os membros da equipe visualizem as tarefas atribuídas a eles e as concluam quando estiverem prontas.
+**Dados necessários:** descrição da tarefa, cargo individual no projeto.
+**Nível de usuário:** usuário comum.
+
+* RF008 - Visualização do projeto - Os posts gerados pelos Gerentes do projetos poderão ser visualizados pelos usuários comuns, via um mural específico para cada projeto
+**Dados necessários:** Título, tipo do post(prazo, comunicado ou pergunta) e o descrição do post.
+**Nível de usuário:** usuário comum.
+
+
+* RF009 - Controle de Projeto - Os posts que estiverem marcados como prazo poderão ser marcados como concluídos no prazo, com atraso ou não concluídos
+**Dados necessários:** Título, estado de conclusão do prazo, e o descrição do post.
+**Nível de usuário:** gerente do projeto.
+
+* RF010 - Alocação de alunos em projetos - O sistema deve permitir que o gerente de projeto aloque alunos nos seus projetos e remova alunos das equipes.
+**Dados necessários:** lista dos alunos, cargo dos alunos no projeto
+**Nível de usuário:** gerente do projeto.
+
+* RF011 - Notificações - O sistema deve enviar notificações para o usuário comum em situações importantes ex:(prazo acabando, novos posts etc.)
+**Dados necessários:** Titulo do novo post ou dias faltando para o fim do prazo, descrição da nova tarefa
+**Nível de usuário:** usuário comum, gerente do projeto.
+
+**Saída**
+* RF012 - Relatórios - O sistema deve permitir que os gerentes de projeto gerem relatórios sobre o progresso do projeto, o desempenho da equipe e o tempo gasto em cada tarefa. Esses relatórios podem ser usados para avaliar o desempenho da equipe e fazer melhorias no processo de gerenciamento do projeto.
+**Dados necessários:** tabela de conclusão de metas individuais de cada aluno(quando concluiu suas tarefas, quantas tarefas foram concluídas, etc), estado dos prazos do projeto(quantos foram concluídos, dentro do prazo etc.) estado de conclusão do projeto(incompleto, completo, arquivado, travado.)
+**Nível de usuário:** gerente do projeto.
 
 # Requisitos Não Funcionais
 
