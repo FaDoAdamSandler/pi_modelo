@@ -1,4 +1,4 @@
-# Projeto Integrador - Fabrica.Build
+# Projeto Integrador - Gerencia.Ai
 
 Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
 
@@ -37,66 +37,58 @@ Um sistema para o gerenciamento de projetos desenvolvidos dentro da F.S (Fábric
 
 
 # Introdução: 
-A fábrica de software é responsável por desenvolver projetos em que alunos e professores trabalham juntos para resolver problemas reais. Coordenada atualmente por Ivo Riegel, a fábrica conta com 5 alunos e 4 professores que coordenam projetos, e existe a previsão para mais “contratações”.
+
+Muitas empresas tem problemas de gerenciamento, geralmente, o principal motivo é a falta de organização ou falta de feedbacks sobre o desempenho, individual e em equipe, de seus empregados. A proposta do software Gerencia.Ai é resolver esses problemas entregando uma interface que possibilita uma organização simples e funcional para seus usuários, e além disso, entregar relatórios para seus coordenadores.
  
 # Situação-problema: 
-O cliente entra em contato para a fábrica para apresentar um problema ou um projeto que precisa ser desenvolvido. Cada professor mantém em uma planilha os projetos que gerencia e define os alunos que estão aptos a desenvolver os projetos.
-O professor responsável pelo projeto, necessita também fazer o gerenciamento, organização das tarefas, acompanhamento dos alunos, tudo sem uma plataforma   específica (em planilhas e anotações), gerando um transtorno por conta do déficit na eficiência na comunicação da coordenação com os alunos.
+O coordenador responsável por algum projeto, precisa fazer o gerenciamento, organização das tarefas, acompanhamento dos empregados, tudo sem uma plataforma  específica (em planilhas e anotações por exemplo), gerando um transtorno por conta do déficit na eficiência na comunicação da coordenação com os empregados.
 
 # Conclusão: 
-Com base nos problemas analisados, o software iria auxiliar com a falta de organização do gerenciamento dos projetos, manter os registros de forma organizada, controle dos alunos bolsistas e facilitar o contato e o desenvolvimento entre equipes.
+Com base nos problemas analisados, o software iria auxiliar com a falta de organização do gerenciamento dos projetos, manter os registros de forma organizada, controle dos empregados e facilitar o contato e o desenvolvimento entre equipes.
 
 # Descrição da proposta
 
-Baseado em todas as informações adquiridas com o cliente e a identificação dos problemas apresentados, buscamos apresentar uma proposta de desenvolvimento do software para sanar as dificultades de gerenciamento da fábrica.
+Baseado em todas as informações adquiridas com o cliente e a identificação dos problemas apresentados, buscamos apresentar uma proposta de desenvolvimento do software para sanar as dificultades de gerenciamento.
 
-Para o controle e gerenciamento dos projetos cadastrados no sistema, visando padronizar e melhorar a comunicação entre as equipes e o coordenador, além disso facilitar o cadastro dos novos alunos da fábrica, integrando-o com o gerenciamento dos projetos, assim obtendo maior eficiência e poupando tempo do coordenador
+Para o controle e gerenciamento dos projetos cadastrados no sistema, visando padronizar e melhorar a comunicação entre as equipes e o coordenador, além disso facilitar o cadastro dos novos empregados, integrando-o com o gerenciamento dos projetos, assim obtendo maior eficiência e poupando tempo do coordenador
 
 ![Ciclo da Venda](docs/CicloDeVendas.svg "Ciclo da Venda")
 
 **Alguns pontos importantes a se destacar são:**
 
--   **Qual o foco de ação do software?** Permitir que os coordenadores possam ter uma interface padronizada para gerenciar seus atuais projetos relacionados a F.S, também podendo se comunicar com os alunos envolvidos, sobre o projeto, via um mural. 
+-   **Qual o foco de ação do software?** Permitir que os coordenadores possam ter uma interface padronizada para gerenciar seus atuais projetos, também podendo se comunicar com os empregados envolvidos, sobre o projeto, via um mural. 
 
--   **Os níveis de usuário do sistema**. Na fábrica, todos os funcionários possuem acesso ao sistema, exceto o PO (Product Owner). O sistema possui uma hierarquia de permissões que é composta por três níveis:
+-   **Os níveis de usuário do sistema**. Todos os funcionários possuem acesso ao sistema, exceto o PO (Product Owner). O sistema possui uma hierarquia de permissões que é composta por três níveis:
 
-    -   **O primeiro nível é o administrador do sistema**, que possui permissões para remover, travar e alterar qualquer projeto no sistema, pode remover alunos inativos, adicionar novos alunos, definir reuniões gerais da fábrica, notificar atrasos de entregas e aplicar punições aos alunos inadimplentes.
+    -   **O primeiro nível é o administrador do sistema**, que possui permissões para remover, travar e alterar qualquer projeto no sistema, pode remover empregados inativos, adicionar novos empregados, definir reuniões gerais, notificar atrasos de entregas e aplicar punições aos empregados inadimplentes.
 
-    -   **O segundo nível é o gerente de projetos**, que tem a permissão de criar (no máximo 2), travar, remover e alterar projetos. Além disso, ele pode assimilar alunos aos seus projetos, marcar reuniões com suas equipes, notificar alunos de seu próprio grupo e remover alunos das equipes.
+    -   **O segundo nível é o gerente de projetos**, que tem a permissão de criar (no máximo 2), travar, remover e alterar projetos. Além disso, ele pode assimilar empregados aos seus projetos, marcar reuniões com suas equipes, notificar empregados de seu próprio grupo e remover empregados das equipes.
 
-    -   **O terceiro nível é o usuário comum**, também conhecido como bolsista. Esse usuário possui permissões para editar os projetos em que está inscrito, enviar notas pelo "fábrica notes" e concluir tarefas.
+    -   **O terceiro nível é o usuário comum**, também conhecido como empregado. Esse usuário possui permissões para editar os projetos em que está inscrito, enviar notas pelo "notes" e concluir tarefas.
 
 # Regras de Negócio
+ 
+* RN001 - Publicação de Projetos: Apenas usuários de nível gerente de projeto ou maior podem fazer a publicação dos projetos.
 
-* RN001 - Máximo de projetos: Um usuário de nível gerente de projetos deve ser capaz apenas de coordenar **2 Projetos** por vez. 
+* RN002 - Criação de projetos: Os usuários com nível gerente ou maior podem criar projetos.
 
-* RN002 - Máximo de bolsistas por projeto: Cada projeto pode contar com apenas **5 bolsistas** no máximo.
+* RN003 - Expulsão de Empregados: Apenas usuários com nível administrador podem expulsar/banir/privar empregados.
 
-* RN003 - Publicação de Projetos: Apenas usuários de nível gerente de projeto ou maior podem fazer a publicação dos projetos nos domínios **fabricadesoftware.ifc.edu.br**
+* RN004 - Cadastro de Empregados: Apenas usuários com nível administrador podem  cadastrar novos empregados no sistema.
+* 
+* RN005 - Exclusão de projetos: apenas o responsável pelo projeto pode excluir os projetos de sua responsabilidade.
 
-* RN004 - Criação de projetos: Os usuários com nível gerente ou maior podem criar projetos desde que não excedam a quantidade estipulada pela RN001
-
-* RN005 - Máximo de projetos por Bolsista: Cada bolsista tem direito a participar de até 2 projetos simultaneamente.
-
-* RN006 - Expulsão de Bolsistas: Apenas usuários com nível administrador podem expulsar/banir/privar bolsistas que saiam das regras.
-
-* RN007 - Recrutamento de Bolsistas: Apenas usuários com nível administrador podem recrutar e inserir novos bolsistas no sistema.
-
-* RN008 - Duração dos projetos: todos os projetos têm duração máxima de **1 ano (Um Ano)**, prorrogáveis em até **2 Anos (Dois Anos)**.
-
-* RN009 - Exclusão de projetos: apenas o responsável pelo projeto pode excluir os projetos de sua responsabilidade.
-
-* RN010 - Avisos no mural: só um gerente de projetos ou maior pode postar um aviso no mural.
+* RN006 - Avisos no mural: só um gerente de projetos ou maior pode postar um aviso no mural.
    
 # Requisitos Funcionais
 **Entrada**
-* **RF001 - Cadastro de projetos:** O sistema deve permitir o cadastro de projetos para o gerenciamento da Fábrica. 
+* **RF001 - Cadastro de projetos:** O sistema deve permitir o cadastro de projetos para o gerenciamento. 
 **Dados necessários:** nome do projeto, descrição, equipe responsável e prazo de entrega. 
 **Nível de usuário:** gerente do projeto.
 
 
-* **RF002 - Cadastro de alunos:** - O sistema deve permitir que o administrador adicione novos alunos à fábrica e remova alunos inativos. 
-**Dados necessários:** nome do aluno, email do aluno e senha.
+* **RF002 - Cadastro de empregados:** - O sistema deve permitir que o administrador adicione e remova empregados. 
+**Dados necessários:** nome, email, cpf e senha.
 **Nível de usuário:** administrador.
 
 * **RF003 - Login:** - O sistema deve permitir que os usuários cadastrados realizem login. 
@@ -114,8 +106,8 @@ Para o controle e gerenciamento dos projetos cadastrados no sistema, visando pad
 
 **Processo**
 
-* RF006 - Controle de tarefas - O sistema deve permitir que os gerentes de projeto monitorem o progresso individual de cada aluno, via uma lista de tarefas individual para cada aluno.
-**Dados necessários:** descrição da tarefa, lista dos alunos, cargo dos alunos no projeto.
+* RF006 - Controle de tarefas - O sistema deve permitir que os gerentes de projeto monitorem o progresso individual de cada empregado, via uma lista de tarefas individual para cada empregado.
+**Dados necessários:** descrição da tarefa, lista dos empregados, cargo dos empregados no projeto.
 **Nível de usuário:** gerente do projeto.
 
 * RF007 - Apontamento de tarefas - O sistema deve permitir que os membros da equipe visualizem as tarefas atribuídas a eles e as concluam quando estiverem prontas.
@@ -131,8 +123,8 @@ Para o controle e gerenciamento dos projetos cadastrados no sistema, visando pad
 **Dados necessários:** Título, estado de conclusão do prazo, e o descrição do post.
 **Nível de usuário:** gerente do projeto.
 
-* RF010 - Alocação de alunos em projetos - O sistema deve permitir que o gerente de projeto aloque alunos nos seus projetos e remova alunos das equipes.
-**Dados necessários:** lista dos alunos, cargo dos alunos no projeto
+* RF010 - Alocação de empregados em projetos - O sistema deve permitir que o gerente de projeto aloque empregados nos seus projetos e remova os empregados das equipes.
+**Dados necessários:** lista dos alunos, cargo dos empregados no projeto
 **Nível de usuário:** gerente do projeto.
 
 * RF011 - Notificações - O sistema deve enviar notificações para o usuário comum em situações importantes ex:(prazo acabando, novos posts etc.)
@@ -141,7 +133,7 @@ Para o controle e gerenciamento dos projetos cadastrados no sistema, visando pad
 
 **Saída**
 * RF012 - Relatórios - O sistema deve permitir que os gerentes de projeto gerem relatórios sobre o progresso do projeto, o desempenho da equipe e o tempo gasto em cada tarefa. Esses relatórios podem ser usados para avaliar o desempenho da equipe e fazer melhorias no processo de gerenciamento do projeto.
-**Dados necessários:** tabela de conclusão de metas individuais de cada aluno(quando concluiu suas tarefas, quantas tarefas foram concluídas, etc), estado dos prazos do projeto(quantos foram concluídos, dentro do prazo etc.) estado de conclusão do projeto(incompleto, completo, arquivado, travado.)
+**Dados necessários:** tabela de conclusão de metas individuais de cada empregado(quando concluiu suas tarefas, quantas tarefas foram concluídas, etc), estado dos prazos do projeto(quantos foram concluídos, dentro do prazo etc.) estado de conclusão do projeto(incompleto, completo, arquivado, travado.)
 **Nível de usuário:** gerente do projeto.
 
 # Requisitos Não Funcionais
