@@ -31,9 +31,9 @@ Links do projeto:
 
 ## 3 - Ordem de Serviço (O.S.)
 
-**Gerenciamento da Fábrica de Software**
+**Gerenciamento de Projetos**
 
-Um sistema para o gerenciamento de projetos desenvolvidos dentro da F.S (Fábrica de Software). Com meios de comunicação entre o coordenador do projeto e os alunos alocados. Ordem de serviço foi o modelo mais compatível com o tipo de sistema que queremos desenvolver, um sistema para o gerenciamento de um ambiente de trabalho.
+Um sistema para o gerenciamento de projetos desenvolvidos. Com meios de comunicação entre o coordenador do projeto e os empregaos alocados. Ordem de serviço foi o modelo mais compatível com o tipo de sistema que queremos desenvolver, um sistema para o gerenciamento de um ambiente de trabalho.
 
 
 # Introdução: 
@@ -51,8 +51,6 @@ Com base nos problemas analisados, o software iria auxiliar com a falta de organ
 Baseado em todas as informações adquiridas com o cliente e a identificação dos problemas apresentados, buscamos apresentar uma proposta de desenvolvimento do software para sanar as dificultades de gerenciamento.
 
 Para o controle e gerenciamento dos projetos cadastrados no sistema, visando padronizar e melhorar a comunicação entre as equipes e o coordenador, além disso facilitar o cadastro dos novos empregados, integrando-o com o gerenciamento dos projetos, assim obtendo maior eficiência e poupando tempo do coordenador
-
-![Ciclo da Venda](docs/CicloDeVendas.svg "Ciclo da Venda")
 
 **Alguns pontos importantes a se destacar são:**
 
